@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-pgpt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0012-tenant/tkwch-fix-0075-0012-app/devfile-sample-pgpt@sha256:a5553f6614bd8816dc150969b64ac3025a31e9107fa40ae65cbb4f5eefb1aae3
+        name: my-nodejs
+        resources: {}
+status: {}
